@@ -22,9 +22,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller
+        pip install openpyxl
 
     - name: Build executable
-      run: pyinstaller --onefile --distpath dist addtitle.py
+      run: pyinstaller --onefile --hidden-import openpyxl --distpath dist addtitle.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
