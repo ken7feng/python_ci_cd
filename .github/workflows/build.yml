@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # 使用 GitHub 提供的 Ubuntu 最新镜像运行
+    runs-on: windows-latest  # 使用 GitHub 提供的 Ubuntu 最新镜像运行
 
     steps:
     # 检出代码
